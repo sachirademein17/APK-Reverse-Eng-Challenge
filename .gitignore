@@ -1,0 +1,80 @@
+# Ignore build outputs
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.ap_
+*.aab
+
+# Keystore files
+*.jks
+*.keystore
+
+# Local configuration
+local.properties
+
+# Android Studio
+.idea/
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+*.iml
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# NDK
+obj/
+.externalNativeBuild/
+
+# Release files (keep release/ directory structure but not the files)
+release/*.apk
+release/*.jar
+
+# Generated files
+bin/
+gen/
+out/
+
+# Signing files
+*.jks
+*.keystore
+key.properties
+
+# ProGuard
+proguard/
+mapping.txt
+seeds.txt
+usage.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+*.swp
+*~

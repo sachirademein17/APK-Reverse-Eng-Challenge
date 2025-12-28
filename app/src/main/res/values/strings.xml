@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SecureApp</string>
+    <string name="title_text">SecureApp Challenge</string>
+    <string name="subtitle_text">Enter the flag to proceed</string>
+    <string name="hint_flag">Enter flag here...</string>
+    <string name="btn_verify">VERIFY FLAG</string>
+    <string name="correct_flag">✓ Correct! Well done!</string>
+    <string name="incorrect_flag">✗ Incorrect flag. Try again.</string>
+    <string name="debugger_detected">⚠ Debugger detected! App will exit.</string>
+    <string name="root_detected">⚠ Rooted device detected!</string>
+    <string name="tampering_detected">⚠ App tampering detected!</string>
+    <string name="flag_format_hint">Flag format: APIIT{...}</string>
+</resources>

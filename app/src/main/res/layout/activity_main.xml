@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#1a1a2e"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔐 SecureApp CTF Challenge"
+        android:textSize="24sp"
+        android:textColor="#00d4ff"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hint: Reverse engineer this app to find the flag"
+        android:textSize="14sp"
+        android:textColor="#16db93"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/flagInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter flag"
+        android:textColorHint="#666"
+        android:textColor="#fff"
+        android:background="@drawable/input_background"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Flag"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#ff6b6b"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty: INSANE"
+        android:textSize="12sp"
+        android:textColor="#ff6b6b"
+        android:layout_marginTop="32dp"
+        android:alpha="0.7"/>
+
+</LinearLayout>
