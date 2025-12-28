@@ -60,8 +60,8 @@ jobs:
           app/build/outputs/apk/release/app-release-unsigned.apk \
           secureapp
         
-        # Zipalign
-        $ANDROID_HOME/build-tools/*/zipalign -v 4 \
+        # Zipalign (use signed APK as input, create new output file)
+        $ANDROID_HOME/build-tools/*/zipalign -f -v 4 \
           app/build/outputs/apk/release/app-release-unsigned.apk \
           app/build/outputs/apk/release/SecureApp.apk
     
