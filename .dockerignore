@@ -1,0 +1,40 @@
+# Docker ignore file - excludes unnecessary files from Docker context
+
+# Build outputs
+app/build/
+app/.cxx/
+.gradle/
+build/
+*.apk
+*.aab
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed for build)
+docs/
+*.md
+!BUILD.md
+
+# Scripts (except gradle)
+*.sh
+!gradlew
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Keystore (use volume mount instead)
+*.keystore
+*.jks

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  apk-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: secureapp-builder
+    volumes:
+      - .:/project
+      - gradle-cache:/root/.gradle
+    working_dir: /project
+    command: >
+      bash -c "
+      echo '🔨 Building SecureApp APK...' &&
+      ./gradlew clean assembleRelease --stacktrace --no-daemon &&
+      echo '✅ Build complete!' &&
+      echo '📦 APK location: app/build/outputs/apk/release/app-release-unsigned.apk' &&
+      ls -lh app/build/outputs/apk/release/
+      "
+
+volumes:
+  gradle-cache:
+    driver: local
