@@ -6,8 +6,7 @@
         android:allowBackup="false"
         android:label="SecureApp"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SecureApp"
-        android:debuggable="false">
+        android:theme="@style/Theme.SecureApp">
         
         <activity
             android:name=".MainActivity"
