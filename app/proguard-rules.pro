@@ -17,11 +17,6 @@
 -allowaccessmodification
 -overloadaggressively
 
-# String encryption
--obfuscationdictionary proguard-dictionary.txt
--classobfuscationdictionary proguard-dictionary.txt
--packageobfuscationdictionary proguard-dictionary.txt
-
 # Keep HiddenCheck but obfuscate its methods
 -keep class com.ctf.secureapp.HiddenCheck {
     public *;
